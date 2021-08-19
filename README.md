@@ -104,18 +104,6 @@ The following table outlines the available checklists and their functions
 <td>Import vector layers into the GIS database</td>
 </tr>
 <tr>
-<td>merge-project-raster-layer</td>
-<td>Checklist for the migration procedure of raster layers during project merges</td>
-</tr>
-<tr>
-<td>merge-project-vector-layer</td>
-<td>Checklist for the migration procedure of vector layers during project merges</td>
-</tr>
-<tr>
-<td>merge-project</td>
-<td>Checklist for ensuring correct procedure is followed for merging projects</td>
-</tr>
-<tr>
 <td>vector-data-preliminary-publication</td>
 <td>Publication workflow for initial and internal vector data</td>
 </tr>
