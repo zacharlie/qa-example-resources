@@ -1,0 +1,21 @@
+{
+  "name": "Example - archive completed project checklist",
+  "description": "A checklist for archiving projects",
+  "dataset_type": "document",
+  "validation_artifact_type": "metadata",
+  "checks": [
+    {
+      "name": "Archived in database",
+      "description": "Project has been archived and stored in archived schema.",
+      "guide": "Store the project in the archived schema and delete from public schema."
+    },
+    {
+      "name": "Geoserver permissions reset",
+      "description": "Have the services been disabled or have project items permissions on Geoserver been set to read only status.",
+      "guide": "Navigate to the workspace settings for the project and set the state to disabled. Alternatively, open the relevant project layers and layer groups in Geoserver and ensure the permissions are set to a read only state."
+    }
+  ],
+  "report": {
+    "algorithm_id": "dataset_qa_workbench:reportmailer"
+  }
+}

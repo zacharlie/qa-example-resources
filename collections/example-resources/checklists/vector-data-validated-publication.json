@@ -1,0 +1,52 @@
+{
+  "name": "Example - validated vector data publication checklist",
+  "description": "A checklist for publishing validated vector datasets to GeoServer and web applications",
+  "dataset_type": "vector",
+  "validation_artifact_type": "dataset",
+  "checks": [
+    {
+      "name": "Geometry is valid",
+      "description": "Check that the layer's geometry does not have invalid geometries.",
+      "guide": "Navigate to Vector -> Geometry tools -> Check Validity... and run the validity analysis tool. Afterwards check that there are no features on the `invalid output` layer",
+      "automation": {
+        "algorithm_id": "qgis:checkvalidity",
+        "artifact_parameter_name": "INPUT_LAYER",
+        "output_name": "INVALID_COUNT",
+        "negate_output": true
+      }
+    },
+    {
+      "name": "Delivered to expert",
+      "description": "Data has been delivered to an expert for appropriate validation.",
+      "guide": "Confirm whether the data has been delivered or whether it is in transit for the relevant experts or external agency for the appropriate data validation and integrity checks."
+    },
+    {
+      "name": "Validated by expert",
+      "description": "Data integrity has been verified by a relevant expert or external agency.",
+      "guide": "Confirm that this data has been verified as correct (has been received back from) the relevant experts or external agency which have performed data validation and integrity checks."
+    },
+    {
+      "name": "Updated in database",
+      "description": "Ensure the existing data in the database is up to date.",
+      "guide": "Overwrite the existing data in the database with the updated and validated data, or publish a new version where appropriate."
+    },
+    {
+      "name": "Layer published",
+      "description": "Ensure that the data is available on Geoserver.",
+      "guide": "Use the Geoserver application interface and ensure the data is published as a layer in line with the organisational SOP."
+    },
+    {
+      "name": "Style is valid",
+      "description": "",
+      "guide": "Ensure that the layer style is correct for the latest data version and that it has been published appropriately."
+    },
+    {
+      "name": "Check permissions",
+      "description": "Ensure that the layer publication and permissions are set correctly on Geoserve.r",
+      "guide": "Use the Geoserver application interface and ensure the data permissions are set in line with the organisational SOP."
+    }
+  ],
+  "report": {
+    "algorithm_id": "dataset_qa_workbench:reportmailer"
+  }
+}

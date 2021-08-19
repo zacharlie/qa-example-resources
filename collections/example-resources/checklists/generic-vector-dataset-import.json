@@ -1,0 +1,32 @@
+{
+  "name": "Example - generic vector data validation checklist",
+  "description": "A checklist for validating vector datasets and importing them into the production database",
+  "dataset_type": "vector",
+  "validation_artifact_type": "dataset",
+  "checks": [
+    {
+      "name": "Geometry is valid",
+      "description": "Check that the layer's geometry does not have invalid geometries.",
+      "guide": "Navigate to Vector -> Geometry tools -> Check Validity... and run the validity analysis tool. Afterwards check that there are no features on the `invalid output` layer.",
+      "automation": {
+        "algorithm_id": "qgis:checkvalidity",
+        "artifact_parameter_name": "INPUT_LAYER",
+        "output_name": "INVALID_COUNT",
+        "negate_output": true
+      }
+    },
+    {
+      "name": "Layer name is correct",
+      "description": "Check that the map layer conforms to the required naming convention.",
+      "guide": ""
+    },
+    {
+      "name": "Layer exported to database",
+      "description": "Export the map layer data to the central database",
+      "guide": "Export the layer to the database using the GDAL Export to PostgreSQL tool and reprojecting the output appropriately, or by utilising the Example Save vector to database model."
+    }
+  ],
+  "report": {
+    "algorithm_id": "dataset_qa_workbench:reportmailer"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Example - create new project checklist",
+  "description": "A checklist for creating new projects ",
+  "dataset_type": "document",
+  "validation_artifact_type": "metadata",
+  "checks": [
+    {
+      "name": "Check the project ID",
+      "description": "Identify the new project ID.",
+      "guide": "The new project ID must be unique and compliant with relevant conventions."
+    },
+    {
+      "name": "Project added to DB",
+      "description": "Add a new project schema to teh database.",
+      "guide": ""
+    },
+    {
+      "name": "Create project workspace",
+      "description": "Create a new Geoserver workspace for this project.",
+      "guide": ""
+    },
+    {
+      "name": "Add a new vector datastore",
+      "description": "Add the projects schema as a vector datastore in Geoserver.",
+      "guide": "Within Geoserver under Stores >> Vector Data Sources >> PostGIS and add the datastore to the project workspace. Ensure that the schema value is set correctly."
+    }
+  ],
+  "report": {
+    "algorithm_id": "dataset_qa_workbench:reportmailer"
+  }
+}

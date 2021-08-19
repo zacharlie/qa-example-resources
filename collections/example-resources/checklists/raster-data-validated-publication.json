@@ -1,0 +1,36 @@
+{
+  "name": "Example - validated raster data publication checklist",
+  "description": "A checklist for publishing validated raster datasets to GeoServer and web applications",
+  "dataset_type": "raster",
+  "validation_artifact_type": "dataset",
+  "checks": [
+    {
+      "name": "Validated by approver",
+      "description": "Data integrity has been verified by a relevant approval agent.",
+      "guide": "Confirm that this data has undergone the relevant data validation and integrity checks."
+    },
+    {
+      "name": "Updated on data store",
+      "description": "Ensure the existing data is up to date.",
+      "guide": "Overwrite the existing data with the updated and validated data, or publish a new version where appropriate."
+    },
+    {
+      "name": "Layer published",
+      "description": "Ensure that the data is available on Geoserver.",
+      "guide": "Use the Geoserver application interface and ensure the data is published as a layer in line with the organisational SOP."
+    },
+    {
+      "name": "Style is valid",
+      "description": "",
+      "guide": "Ensure that the layer style is correct for the latest data version and that it has been published appropriately."
+    },
+    {
+      "name": "Check permissions",
+      "description": "Ensure that the layer publication and permissions are set correctly on Geoserver.",
+      "guide": "Use the Geoserver application interface and ensure the data permissions are set in line with the organisational SOP."
+    }
+  ],
+  "report": {
+    "algorithm_id": "dataset_qa_workbench:reportmailer"
+  }
+}

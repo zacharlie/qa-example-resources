@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50mm" height="50mm" version="1.1" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+ <path transform="scale(.26458)" d="m90.709 0v18.994c-38.7 1.9117-69.803 33.015-71.715 71.715h-18.994v7.5586h18.994c1.9117 38.7 33.015 69.803 71.715 71.715v18.994h7.5586v-18.994c38.688-1.9126 69.711-33.025 71.631-71.715h19.078v-7.5586h-19.078c-1.9202-38.689-32.944-69.804-71.631-71.717v-18.992h-7.5586zm0 26.566v11.369c-28.258 1.8696-50.904 24.516-52.773 52.773h-11.369c1.8883-34.603 29.54-62.254 64.143-64.143zm7.5586 0c34.602 1.8892 62.254 29.54 64.143 64.143h-11.355a56.693 56.693 0 0 0-37.248-49.521c-0.00193-7.03e-4 -0.00393-0.001251-0.00586-0.001953a56.693 56.693 0 0 0-2.4746-0.83203c-0.10332-0.032253-0.20697-0.064029-0.31055-0.095704a56.693 56.693 0 0 0-2.1914-0.61914c-0.18209-0.047693-0.36408-0.09471-0.54688-0.14062a56.693 56.693 0 0 0-2.1914-0.50195c-0.18854-0.039397-0.37719-0.077725-0.56641-0.11524a56.693 56.693 0 0 0-2.2773-0.40625c-0.1488-0.023184-0.29809-0.044386-0.44727-0.066406a56.693 56.693 0 0 0-2.3906-0.30273c-0.10996-0.011462-0.21994-0.022374-0.33008-0.033203a56.693 56.693 0 0 0-1.8066-0.15234v-11.354zm-3.7793 18.787v49.135h49.133c1e-5 27.181-21.952 49.133-49.133 49.133-27.181 0-49.135-21.952-49.135-49.133 0-27.181 21.954-49.135 49.135-49.135zm-67.922 52.914h11.369c1.8696 28.258 24.516 50.904 52.773 52.773v11.369c-34.602-1.8883-62.253-29.541-64.143-64.143zm124.42 0h11.428c-1.8891 34.601-29.541 62.253-64.143 64.143v-11.369c28.247-1.8708 50.842-24.522 52.715-52.773z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" shape-rendering="auto" solid-color="#000000" stop-color="#000000" stroke="param(outline)" stroke-opacity="param(outline-opacity)" stroke-width="param(outline-width) 0" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;font-variation-settings:normal;inline-size:0;isolation:auto;mix-blend-mode:normal;paint-order:stroke fill markers;shape-margin:0;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+ <style type="text/css">.st0{fill:#FFFFFF;}
+	.st1{fill:#1C1B1C;}
+	.st2{fill:#FFF200;}
+	.st3{fill:#1D1A00;}
+	.st4{fill:#EC008C;}
+	.st5{fill:#1E0008;}
+	.st6{fill:#ED1C24;}
+	.st7{fill:#1E0000;}
+	.st8{fill:#00AEEF;}
+	.st9{fill:#00121D;}
+	.st10{fill:#00A651;}
+	.st11{fill:#001300;}
+	.st12{fill:#2E3192;}
+	.st13{fill:#00000D;}
+	.st14{fill:#363639;}</style>
+</svg>

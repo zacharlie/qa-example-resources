@@ -1,0 +1,71 @@
+{
+  "name": "Example - generic raster data validation checklist",
+  "description": "A checklist for validating raster datasets and importing them into the organisational infrastructure",
+  "dataset_type": "raster",
+  "validation_artifact_type": "dataset",
+  "checks": [
+    {
+      "name": "CRS is Correct",
+      "description": "Layer's Coordinate Reference System is correct according to project needs.",
+      "guide": "Open the layer properties dialog, then navigate to the 'Information' tab and in the section called 'Information from provider' check if the 'CRS' field has the correct values specified in accordance with the project needs."
+    },
+    {
+      "name": "Extents and point of origin are correct",
+      "description": "Layer's extent provides coverage of the whole region and the origin point is consistent.",
+      "guide": "Within the layer properties 'Information' tab, check the 'Information from provider' section and confirm if the value shown in the 'Extent' field covers the region of interest and the starting point is consistent with project requirements."
+    },
+    {
+      "name": "Layer has correct clipping bounds",
+      "description": "Image has been clipped or masked to the expected Area of Interest.",
+      "guide": "Visually compare the layer to the AOI bounds and ensure the coverage is correct and that any required clipping or masking operations have been performed adequately."
+    },
+    {
+      "name": "Layer has correct NODATA value",
+      "description": "Layer has the expected NODATA value.",
+      "guide": "Within the layer properties 'Transparency' tab, check the 'No Data Value' section and confirm if the value is correctly set (e.g. 'not defined')."
+    },
+    {
+      "name": "Layer has correct number of bands",
+      "description": "Layer has the expected number of bands.",
+      "guide": "Within the layer properties 'Information' tab, check the 'Bands' section and confirm if the value shown in 'Band count' field is equal to the expected number, e.g. 3"
+    },
+    {
+      "name": "Layer has correct pixel size",
+      "description": "Image has the correct units and pixel dimensions",
+      "guide": "Within the layer properties 'Information' tab, check the 'Information from provider' section and confirm if the value shown is correct."
+    },
+    {
+      "name": "Layer name is correct",
+      "description": "Check that the file name conforms to the required naming convention.",
+      "guide": "Ensure that the file name conforms to required the naming conventions as stipulated in the organisational SOP."
+    },
+    {
+      "name": "Style file available",
+      "description": "Does this layer have a default style available on Geoserver.",
+      "guide": "Style the layer with a suitable default or custom style and export the layer style in SLD format.",
+      "automation": {
+        "algorithm_id": "script:savestylesld",
+        "artifact_parameter_name": "INPUT",
+        "output_name": "OUTPUT"
+      }
+    },
+    {
+      "name": "Layer has been stored",
+      "description": "Image has been uploaded to the relevant storage platform",
+      "guide": "Confirm that the layer has been uploaded to the relevant storage platform. This typically involves the uploading of the image and it's definition as a new workspace layer to Geoserver in line with the organisational SOP."
+    },
+    {
+      "name": "Layer style is uploaded",
+      "description": "Has the SLD been uploaded to Geoserver.",
+      "guide": "Confirm that the layer has had an appropriate style definition uploaded to Geoserver."
+    },
+    {
+      "name": "Permissions are set",
+      "description": "Have the relevant security settings been configured on Geoserver.",
+      "guide": "Confirm that the layer has had the appropriate security definitions set within the layer or layer group settings on Geoserver."
+    }
+  ],
+  "report": {
+    "algorithm_id": "dataset_qa_workbench:reportmailer"
+  }
+}
