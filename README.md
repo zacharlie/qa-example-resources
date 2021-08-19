@@ -4,6 +4,14 @@ This repository comprises a variety of QGIS shareable resources for  demonstrati
 
 ## About The QA Workbench
 
+This plugin allows loading checklists with designated steps, allowing users to design workflows for the management of process.
+
+Each checklist step is intended to have some form of verification, but steps are customisable and provides various fields, including instructional information or the capture of generic note taking.
+
+Checklists are simple JSON documents with a predefined schema. Checklist steps are integrated with the QGIS Processing Framework which allows processing and verification steps to adopt a semi-automatic workflow structure.
+
+In addition, the plugin provides interfaces for the development of reports which may be stored as pdfs, emailed to other agents as part of approval workflows, or attached to layer metadata in QGIS to facilitate data integrity and provenance preservation.
+
 ## About QGIS Resource Sharing
 
 This is a resources repository designed to be utilised with the [QGIS Resource Sharing Plugin](http://qgis-contribution.github.io/QGIS-ResourceSharing/).
