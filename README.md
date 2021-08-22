@@ -81,38 +81,58 @@ The resource sharing plugin allows users to update or uninstall the resources sh
 The following table outlines the available checklists and their functions
 
 <table>
-<thead>
-<tr>
-<th>Checklist</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>archive-project</td>
-<td>Checklist for ensuring correct procedure is followed for archiving a project</td>
-</tr>
-<tr>
-<td>create-project</td>
-<td>Checklist for ensuring correct procedure is followed for creating a new project</td>
-</tr>
-<tr>
-<td>generic-raster-dataset-import</td>
-<td>Import raster layers into the Geoserver instance</td>
-</tr>
-<tr>
-<td>generic-vector-dataset-import</td>
-<td>Import vector layers into the GIS database</td>
-</tr>
-<tr>
-<td>vector-data-preliminary-publication</td>
-<td>Publication workflow for initial and internal vector data</td>
-</tr>
-<tr>
-<td>vector-data-validated-publication</td>
-<td>Publication workflow for validated and published vector data</td>
-</tr>
-<tr>
-<td>raster-data-validated-publication</td>
-<td>Publication workflow for validated and published raster data</td>
-</tr>
-</tbody></table>
+  <thead>
+    <tr>
+      <th>Checklist</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>example.checklist</td>
+      <td>
+        Sample checklist demonstrating the simplest checklist structure.
+        Note how the checklist is recognised by the plugin despite not having a json file extension.
+      </td>
+    </tr>
+    <tr>
+      <td>invalid-checklist.json</td>
+      <td>
+        Sample checklist demonstrating an invalid checklist structure.
+        If checklists cannot be validated by the JSON Schema definition, they are not recognised by the plugin.
+      </td>
+    </tr>
+    <tr>
+      <td>archive-project</td>
+      <td>
+        Checklist for ensuring correct procedure is followed for archiving a project
+      </td>
+    </tr>
+    <tr>
+      <td>create-project</td>
+      <td>
+        Checklist for ensuring correct procedure is followed for creating a new project
+      </td>
+    </tr>
+    <tr>
+      <td>generic-raster-dataset-import</td>
+      <td>Import raster layers into the Geoserver instance</td>
+    </tr>
+    <tr>
+      <td>generic-vector-dataset-import</td>
+      <td>Import vector layers into the GIS database</td>
+    </tr>
+    <tr>
+      <td>vector-data-preliminary-publication</td>
+      <td>Publication workflow for initial and internal vector data</td>
+    </tr>
+    <tr>
+      <td>vector-data-validated-publication</td>
+      <td>Publication workflow for validated and published vector data</td>
+    </tr>
+    <tr>
+      <td>raster-data-validated-publication</td>
+      <td>Publication workflow for validated and published raster data</td>
+    </tr>
+  </tbody>
+</table>

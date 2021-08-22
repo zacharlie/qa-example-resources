@@ -1,0 +1,14 @@
+{
+    "name": "Invalid Checklist",
+    "description": "Sample checklist demonstrating the simplest checklist structure",
+    "dataset_type": "document",
+    "validation_artifact_type": "metadata",
+    "checks": [
+      {
+        "non-conforming-field": "This field doesn't match the JSON schema definition and will not load unless you change it to name"
+      },
+      {
+        "name": "This object has an invalid trailing comma, which makes the json file invalid and thus the plugin will not read it until it is removed"
+      },
+    ]
+  }

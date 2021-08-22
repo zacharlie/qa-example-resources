@@ -1,0 +1,14 @@
+{
+  "name": "Checklist Example",
+  "description": "Sample checklist demonstrating the simplest checklist structure",
+  "dataset_type": "document",
+  "validation_artifact_type": "metadata",
+  "checks": [
+    {
+      "name": "Task One Completed"
+    },
+    {
+      "name": "Task Two Completed"
+    }
+  ]
+}
