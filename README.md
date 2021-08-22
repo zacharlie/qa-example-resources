@@ -1,6 +1,6 @@
 # Example Resources
 
-This repository comprises a variety of QGIS shareable resources for  demonstrating the functionality of the [Quality Assurance Workbench Plugin](https://github.com/kartoza/qgis_dataset_qa_workbench).
+This repository comprises a variety of QGIS shareable resources for demonstrating the functionality of the [Quality Assurance Workbench](https://github.com/kartoza/qgis_dataset_qa_workbench) QGIS Plugin and providing a template for users to learn and start building their own checklists.
 
 ## About The QA Workbench
 
@@ -55,6 +55,7 @@ In the case of SVGs, this will enable the images to be accessed from the SVG ele
 Custom repositories are not available by default and will need to be explicitly added for all relevant QGIS user profiles. To add the repository, open the QGIS Resource Sharing plugin and navigate to the *Settings* tab. Click the *Add repository* button and input the preferred name for your repository, such as `QA Example`, along with the URL to the remote repository, followed by the *.git* extension, e.g. `https://github.com/zacharlie/qa-example-resources.git`.
 
 ![Add Repository UI](https://user-images.githubusercontent.com/64078329/96613217-f963ea00-12fe-11eb-8ae8-b4fd9df2dd2b.png)
+
 ## Adding a local repository
 
 Users may create, clone or download a compatible repository or structure one in accordance with the QGIS Resource Plugin Documentation. Users that are unfamiliar with git are encouraged to make use of GitHub desktop and make a clone of this repository to their local environment.
@@ -78,8 +79,9 @@ The resource sharing plugin allows users to update or uninstall the resources sh
 
 ## Checklists
 
-The following table outlines the available checklists and their functions
+The following table outlines the available checklists and their associated functionality/ purpose.
 
+<!-- Use HTML table because large md tables aren't really readable -->
 <table>
   <thead>
     <tr>
