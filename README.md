@@ -22,7 +22,7 @@ The resource sharing plugin provides a simple method for the distribution and ut
 
 The repository contains only a single collection, example-resources. The resource sharing collection structure does support multiple collections, however additional collections are not required at this time.
 
-The shared resources include a single SVG for demo purposes, processing models and processing scripts used in QA workflows, and checklists which demonstrate basic and common functionalities for the QA Qorkbench plugin.
+The shared resources include a single SVG for demo purposes, processing models and processing scripts used in QA workflows, and checklists which demonstrate basic and common functionalities for the QA Workbench plugin.
 
 ## Installing the Resource Sharing Plugin
 
